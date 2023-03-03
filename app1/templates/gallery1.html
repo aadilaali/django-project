@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+         
+        <div class="row">
+            {% for user in users %}
+            <div class="col-sm-4"><a href="{% url 'app1:details' user.id %}"><img src="{{user.Photo.url}}" alt="" height="200px" width="200px">
+                <h3>{{user.Name}}</h3></a></div>
+            {% endfor %} 
+        </div>  
+        
+    </div> 
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div style="margin-left: 450px;">
+    {% for msg in messages %} 
+        {{msg}}
+        {% endfor %}
+        
+        <h1 class="header-title">
+            <span class="up">HI!</span>
+            <br>
+            <span class="down">I am {{data.Name}}</span>
+        </h1>
+        <img src="{{data.Photo.url}}" alt="" height="200px" width="200px">
+            <br>
+                <a href="{% url 'app1:updat<br>
+            <h3 class="header-subtitle">FRONTEND WEB DESIGNER</h3>            
+            <div style="float:left; "><a href="{% url 'app1:update' data.id %}">Update</a>/
+                <a href="{% url 'app1:changepassword' data.id %}">Change Password</a>/
+                <a href="{% url 'app1:logout' %}">Logout</a>/
+            </div>
+        </div>    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+         
+{% endblock %}
+
